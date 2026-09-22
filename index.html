@@ -6,6 +6,7 @@
     <title>Pagina Principal</title>
     <link rel="stylesheet" href="./Styles/style.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
+    <link rel="stylesheet" href="./Styles/navbar.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +21,7 @@
 
   <body>
     <nav>
-        <div class="navbar">
+      <div class="navbar px-5">
         <div class="logos">
           <a href="">
             <img src="./Assets/img/logoHOTflix.png" alt="Logo" />
@@ -28,10 +29,12 @@
           <a class="navbar-brand" href="">
             <span class="hot">HOT</span><span class="flix">flix</span>
           </a>
-          <a href="">Inicio</a>
-          <a href="">Suscripcion</a>
+          <a class="in" href="">Inicio</a>
+          <a class="in" href="">Suscripcion</a>
         </div>
-        <div class="inicioS">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"> ☰ </label>
+        <div class="inicioS menu-mobile">
           <form class="d-flex" role="search">
             <input
               type="search"
@@ -39,7 +42,7 @@
               aria-label="Search"
             />
           </form>
-          <a class="iS" href="">Iniciar Sesion</a>
+          <a class="iS" href="./Pages/login.html">Iniciar Sesion</a>
           <a class="sus" href="">Suscribirse</a>
         </div>
       </div>
@@ -56,10 +59,11 @@
                 class="logo"
                 src="./Assets/img/logoHOTflix.png"
                 alt="Logo de Hotflix"
-                style="max-height: 70px; width: auto;"
+                style="max-height: 70px; width: auto"
               />
-             <span class="fw-bold fs-4 tracking-wide">
-                <span style="color: #c40812;">HOT</span><span class="text-light">FLIX</span>
+              <span class="fw-bold fs-4 tracking-wide">
+                <span style="color: #c40812">HOT</span
+                ><span class="text-light">FLIX</span>
               </span>
             </div>
 
