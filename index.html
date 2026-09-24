@@ -8,45 +8,35 @@
     <link rel="stylesheet" href="./Styles/style.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
     <link rel="stylesheet" href="./Styles/navbar.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
 
 <body>
     <nav>
-      <div class="navbar px-5">
-        <div class="logos">
-          <a href="">
-            <img src="./Assets/img/logoHOTflix.png" alt="Logo" />
-          </a>
-          <a class="navbar-brand" href="">
-            <span class="hot">HOT</span><span class="flix">flix</span>
-          </a>
-          <a class="in" href="">Inicio</a>
-          <a class="in" href="">Suscripcion</a>
+        <div class="navbar px-5">
+            <div class="logos">
+                <a href="">
+                    <img src="./Assets/img/logoHOTflix.png" alt="Logo" />
+                </a>
+                <a class="navbar-brand" href="">
+                    <span class="hot">HOT</span><span class="flix">flix</span>
+                </a>
+                <a class="in" href="">Inicio</a>
+                <a class="in" href="">Suscripcion</a>
+            </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon"> ☰ </label>
+            <div class="inicioS menu-mobile">
+                <form class="d-flex" role="search">
+                    <input type="search" placeholder="🔍 Buscar series y peliculas..." aria-label="Search" />
+                </form>
+                <a class="iS" href="./Pages/login.html">Iniciar Sesion</a>
+                <a class="sus" href="">Suscribirse</a>
+            </div>
         </div>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon"> ☰ </label>
-        <div class="inicioS menu-mobile">
-          <form class="d-flex" role="search">
-            <input
-              type="search"
-              placeholder="🔍 Buscar series y peliculas..."
-              aria-label="Search"
-            />
-          </form>
-          <a class="iS" href="./Pages/login.html">Iniciar Sesion</a>
-          <a class="sus" href="">Suscribirse</a>
-        </div>
-      </div>
     </nav>
 
     <main>
@@ -127,56 +117,48 @@
                     <div class="row justify-content-center  ">
                         <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
                             <div class="card cardCss">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHscAjqsoGjzoZwRmiEddUOUb6D74ULUsmZjVGkAus1A&s=10"
+                                    class="card-img card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card’s content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">El corazón de la Bestia</h5>
+                                    <p class="card-text">Soldado herido de Fuerzas Especiales y su perro militar luchan por sobrevivir en la naturaleza salvaje de Alaska mientras buscan el camino a casa.</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
                             <div class="card cardCss">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQqZxE7FeTaI4cxTF5V7I9yJ0oOT47cVxwgK2PgDJSPe-uj-dlaorbHuPDkDalzqdU0QfPrn0ugnAFRLlWbBILBvTD0436unSiiZeQ5rm4bcgh6U-b9T1PpBJJDt2LOOiyf9OA1CfkPbWflGcR0ysQnFIZtY6q-E4vJJlrOCui68wrOAzM9npUL1H0vGs/s1008/resident-evil-2026-poster.jpg"
+                                    class="card-img card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card’s content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">Resident Evil: Noche Cero</h5>
+                                    <p class="card-text">Sigue a un desafortunado mensajero encargado de entregar un
+                                        paquete a un hospital remoto. Pronto se encuentra atrapado en medio de una
+                                        epidemia y debe luchar contra hordas de criaturas mutantes para sobrevivir.</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
                             <div class="card cardCss">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD2ycC4ziIgIECEZsAprexgd3Ha1bHT7Q7eQoqVK7YSdg0N3jfaI2WhU&s=10" class="card-img card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card’s content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title">One Piece: La película</h5>
+                                    <p class="card-text">Monkey D. Luffy y los primeros miembros de su tripulación (Zoro, Nami y Usopp) buscan el tesoro de oro del pirata Woonan mientras enfrentan al villano El Drago</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
                             <div class="card cardCss">
-                                <img src="..." class="card-img-top" alt="...">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNGEwYWZkN2UtOTQ5Mi00MGQzLWEzNjYtMWMyNDBkMTkzMWNkXkEyXkFqcGc@._V1_.jpg" class="card-img card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk
-                                        of the card’s content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <h5 class="card-title"> Advengers: Doomsday</h5>
+                                    <p class="card-text">Héroes icónicos de tres universos diferentes se encuentran en un curso de colisión mortal y enfrentan una amenaza existencial como nunca antes han visto.</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
                                 </div>
                             </div>
                         </div>
@@ -188,23 +170,18 @@
         </section>
     </main>
     <footer class="footer-bg text-light pt-5 pb-5">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
-          <div class="col">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <!-- Icono SVG del Logo -->
-              <img
-                class="logo"
-                src="./Assets/img/logoHOTflix.png"
-                alt="Logo de Hotflix"
-                style="max-height: 70px; width: auto"
-              />
-              <span class="fw-bold fs-4 tracking-wide">
-                <span style="color: #c40812">HOT</span
-                ><span class="text-light">FLIX</span>
-              </span>
-            </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <!-- Icono SVG del Logo -->
+                        <img class="logo" src="./Assets/img/logoHOTflix.png" alt="Logo de Hotflix"
+                            style="max-height: 70px; width: auto" />
+                        <span class="fw-bold fs-4 tracking-wide">
+                            <span style="color: #c40812">HOT</span><span class="text-light">FLIX</span>
+                        </span>
+                    </div>
 
                     <p class="small lh-base mb-4 Lechuga text-description">
                         Hotflix es la plataforma definitiva de streaming cinemático.

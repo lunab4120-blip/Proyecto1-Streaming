@@ -1,0 +1,80 @@
+.section1 {
+    height: 100vh;
+}
+.sectionMain{
+    background-color: var(--surface-lowest);
+    display: flex;
+}
+
+.divImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.223), rgb(14, 14, 19)),
+        url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/3e9f3cae05535162042621bd71694c45.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+h2>span {
+    color: var(--color-accent-cyan);
+}
+
+.card-body>h5 {
+    color: var(--color-accent-cyan);
+}
+
+.card-body>p {
+    color: var(--text-secondary);
+}
+
+button>a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.btn-main {
+    background: var(--surface-container) !important;
+    border: none;
+    border-radius: 20px !important;
+    color: var(--text-secondary) !important;
+}
+
+@media (max-width: 767px) {
+    .card-body>p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.cardCss{
+    background-color: var(--surface-container) !important;
+    min-height: 650px;
+    max-height: 650px;
+    
+
+    &div>h5{
+        color: var(--text-primary);
+    }
+}
+.card-img{
+        min-height: 400px;
+    }
+
+.card-body>.card-text{
+    display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+}
+.card-body>a{
+    display: flex;
+    justify-content: center;
+    background-color: #e50914;
+    color: var(--text-secondary);
+}
+.card-body>a:hover{
+    background-color: var(--color-accent-cyan) !important;
+}
