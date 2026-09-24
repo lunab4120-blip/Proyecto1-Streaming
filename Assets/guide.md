@@ -52,3 +52,7 @@ Construidos en capas tonales de carbón y obsidiana para generar profundidad sin
 ## 5. paginas de íconos 
 
 |https://fontawesome.com|
+
+## 6. Familia Tipográfica Principal (Font Family)
+
+**Familia principal:** Montserrat, con respaldo en Inter, system-ui, -apple-system, sans-serif.

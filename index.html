@@ -1,249 +1,302 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Principal</title>
     <link rel="stylesheet" href="./Styles/style.css" />
     <link rel="stylesheet" href="./Styles/footer.css" />
     <link rel="stylesheet" href="./Styles/navbar.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
 
-  <body>
+<body>
     <nav>
-      <div class="navbar px-5">
-        <div class="logos">
-          <a href="">
-            <img src="./Assets/img/logoHOTflix.png" alt="Logo" />
-          </a>
-          <a class="navbar-brand" href="">
-            <span class="hot">HOT</span><span class="flix">flix</span>
-          </a>
-          <a class="in" href="">Inicio</a>
-          <a class="in" href="">Suscripcion</a>
+        <div class="navbar px-5">
+            <div class="logos">
+                <a href="">
+                    <img src="./Assets/img/logoHOTflix.png" alt="Logo" />
+                </a>
+                <a class="navbar-brand" href="">
+                    <span class="hot">HOT</span><span class="flix">flix</span>
+                </a>
+                <a class="in" href="">Inicio</a>
+                <a class="in" href="">Suscripcion</a>
+            </div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon"> ☰ </label>
+            <div class="inicioS menu-mobile">
+                <form class="d-flex" role="search">
+                    <input type="search" placeholder="🔍 Buscar series y peliculas..." aria-label="Search" />
+                </form>
+                <a class="iS" href="./Pages/login.html">Iniciar Sesion</a>
+                <a class="sus" href="">Suscribirse</a>
+            </div>
         </div>
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon"> ☰ </label>
-        <div class="inicioS menu-mobile">
-          <form class="d-flex" role="search">
-            <input
-              type="search"
-              placeholder="🔍 Buscar series y peliculas..."
-              aria-label="Search"
-            />
-          </form>
-          <a class="iS" href="./Pages/login.html">Iniciar Sesion</a>
-          <a class="sus" href="">Suscribirse</a>
-        </div>
-      </div>
     </nav>
-    <main></main>
+
+    <main>
+        <section class="section1 sectionMain">
+            <div class="d-flex divImage ">
+                <div class="divContainer d-flex flex-column justify-content-end gap-2 m-5">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <div>
+                                <h2 class="fs-1 fw-bolder text-light"> Dragon ball super <span>Broly</span></h2>
+                                <h5 class="fw-light">Serie original de Toei Animation </h5>
+                            </div>
+                            <p class="card-text ">
+                                Goku y Vegeta encuentran a Broly, un guerrero Saiyajin. Pero, ¿cómo sobrevivió a la
+                                destrucción
+                                de su planeta y dónde estuvo todo ese tiempo? <br>
+                                La situación empeora todavía más cuando Freezer
+                                vuelve
+                                al
+                                mundo de los vivos desde el infierno.</p>
+                            <div>
+                                <button class=" btn btn-main mt-1">
+                                    <a href="" class="d-flex align-items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                                            <path
+                                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                                        </svg>Reproducir Ahora</a>
+                                </button>
+                                <button class=" btn btn-main mt-1"><a href="" class="d-flex align-items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                                        </svg>
+                                        Más informacion</a></button>
+                                <button class=" btn btn-main mt-1"><a href="" class="d-flex ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                            <path
+                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                        </svg>
+                                    </a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionMain">
+            <div class="container my-2">
+                <div class="container d-flex justify-content-between mt-4">
+                    <div>
+                        <h2> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
+                            </svg>Sugerencias para ti</h2>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Todo
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Estrenos</a></li>
+                            <li><a class="dropdown-item" href="#">Clasicos</a></li>
+                            <li><a class="dropdown-item" href="#">Más vistos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center  ">
+                        <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
+                            <div class="card cardCss">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHscAjqsoGjzoZwRmiEddUOUb6D74ULUsmZjVGkAus1A&s=10"
+                                    class="card-img card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">El corazón de la Bestia</h5>
+                                    <p class="card-text">Soldado herido de Fuerzas Especiales y su perro militar luchan por sobrevivir en la naturaleza salvaje de Alaska mientras buscan el camino a casa.</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
+                            <div class="card cardCss">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQqZxE7FeTaI4cxTF5V7I9yJ0oOT47cVxwgK2PgDJSPe-uj-dlaorbHuPDkDalzqdU0QfPrn0ugnAFRLlWbBILBvTD0436unSiiZeQ5rm4bcgh6U-b9T1PpBJJDt2LOOiyf9OA1CfkPbWflGcR0ysQnFIZtY6q-E4vJJlrOCui68wrOAzM9npUL1H0vGs/s1008/resident-evil-2026-poster.jpg"
+                                    class="card-img card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Resident Evil: Noche Cero</h5>
+                                    <p class="card-text">Sigue a un desafortunado mensajero encargado de entregar un
+                                        paquete a un hospital remoto. Pronto se encuentra atrapado en medio de una
+                                        epidemia y debe luchar contra hordas de criaturas mutantes para sobrevivir.</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
+                            <div class="card cardCss">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD2ycC4ziIgIECEZsAprexgd3Ha1bHT7Q7eQoqVK7YSdg0N3jfaI2WhU&s=10" class="card-img card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">One Piece: La película</h5>
+                                    <p class="card-text">Monkey D. Luffy y los primeros miembros de su tripulación (Zoro, Nami y Usopp) buscan el tesoro de oro del pirata Woonan mientras enfrentan al villano El Drago</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-3 col-md-6 col-sm-12 my-1">
+                            <div class="card cardCss">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNGEwYWZkN2UtOTQ5Mi00MGQzLWEzNjYtMWMyNDBkMTkzMWNkXkEyXkFqcGc@._V1_.jpg" class="card-img card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Avengers: Doomsday</h5>
+                                    <p class="card-text">Héroes icónicos de tres universos diferentes se encuentran en un curso de colisión mortal y enfrentan una amenaza existencial como nunca antes han visto.</p>
+                                    <a href="#" class="btn btn-primary border-0">Detalles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
     <footer class="footer-bg text-light pt-5 pb-5">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
-          <div class="col">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <!-- Icono SVG del Logo -->
-              <img
-                class="logo"
-                src="./Assets/img/logoHOTflix.png"
-                alt="Logo de Hotflix"
-                style="max-height: 70px; width: auto"
-              />
-              <span class="fw-bold fs-4 tracking-wide">
-                <span style="color: #c40812">HOT</span
-                ><span class="text-light">FLIX</span>
-              </span>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
+                <div class="col">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <!-- Icono SVG del Logo -->
+                        <img class="logo" src="./Assets/img/logoHOTflix.png" alt="Logo de Hotflix"
+                            style="max-height: 70px; width: auto" />
+                        <span class="fw-bold fs-4 tracking-wide">
+                            <span style="color: #c40812">HOT</span><span class="text-light">FLIX</span>
+                        </span>
+                    </div>
+
+                    <p class="small lh-base mb-4 Lechuga text-description">
+                        Hotflix es la plataforma definitiva de streaming cinemático.
+                        Transmisión ultra inmersiva en 4K UHD, sonido espacial envolvente
+                        y las producciones más exclusivas de cine y televisión.
+                    </p>
+
+                    <p class="text-muted-custom small mb-0">
+                        © 2026 Hotflix Inc. Todos los derechos reservados.
+                    </p>
+                </div>
+
+                <!-- COLUMNA 2: INSTITUCIONAL -->
+                <div class="col ps-md-5">
+                    <h5 class="fw-bold mb-3 fs-6 text-light">Institucional</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li>
+                            <a href="/acerca-de-nosotros"
+                                class="text-muted-custom text-decoration-none small hover-link">Acerca de nosotros</a>
+                        </li>
+                        <li>
+                            <a href="/contacto" class="text-muted-custom text-decoration-none small hover-link">Contacto
+                                por consultas</a>
+                        </li>
+                        <li>
+                            <a href="/terminos-privacidad"
+                                class="text-muted-custom text-decoration-none small hover-link">Términos y
+                                Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="/ayuda" class="text-muted-custom text-decoration-none small hover-link">Centro de
+                                Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- COLUMNA 3: COMUNIDAD Y PANTALLAS -->
+                <div class="col">
+                    <h5 class="fw-bold mb-3 fs-6 text-light">
+                        Comunidad y Conectividad
+                    </h5>
+                    <p class="text-muted-custom small mb-3">
+                        Conéctate con otros amantes del cine y mantente al tanto de
+                        nuestros estrenos globales semanales.
+                    </p>
+
+                    <!-- Botones de Redes Sociales Unificados -->
+                    <div class="d-flex gap-2 mb-4">
+                        <a href="#"
+                            class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                            aria-label="Comunidad">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#10b981"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                            aria-label="Ver ahora">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#c40812"
+                                class="bi bi-caret-right-square" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                <path
+                                    d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                            aria-label="Foro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3b82f6"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                            aria-label="Novedades">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f59e0b"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                            aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3b82f6"
+                                class="bi bi-twitter" viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Etiquetas de disponibilidad -->
+                    <p class="fw-bold small mb-2 text-muted-custom" style="font-size: 0.75rem; letter-spacing: 1px">
+                        DISPONIBLE EN TODAS LAS PANTALLAS
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge badge-custom p-2">4K ULTRA HD</span>
+                        <span class="badge badge-custom p-2">DOLBY ATMOS</span>
+                        <span class="badge badge-custom p-2">IMAX ENHANCED</span>
+                    </div>
+                </div>
             </div>
-
-            <p class="small lh-base mb-4 Lechuga text-description">
-              Hotflix es la plataforma definitiva de streaming cinemático.
-              Transmisión ultra inmersiva en 4K UHD, sonido espacial envolvente
-              y las producciones más exclusivas de cine y televisión.
-            </p>
-
-            <p class="text-muted-custom small mb-0">
-              © 2026 Hotflix Inc. Todos los derechos reservados.
-            </p>
-          </div>
-
-          <!-- COLUMNA 2: INSTITUCIONAL -->
-          <div class="col ps-md-5">
-            <h5 class="fw-bold mb-3 fs-6 text-light">Institucional</h5>
-            <ul class="list-unstyled d-flex flex-column gap-2">
-              <li>
-                <a
-                  href="/acerca-de-nosotros"
-                  class="text-muted-custom text-decoration-none small hover-link"
-                  >Acerca de nosotros</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/contacto"
-                  class="text-muted-custom text-decoration-none small hover-link"
-                  >Contacto por consultas</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/terminos-privacidad"
-                  class="text-muted-custom text-decoration-none small hover-link"
-                  >Términos y Privacidad</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/ayuda"
-                  class="text-muted-custom text-decoration-none small hover-link"
-                  >Centro de Ayuda</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- COLUMNA 3: COMUNIDAD Y PANTALLAS -->
-          <div class="col">
-            <h5 class="fw-bold mb-3 fs-6 text-light">
-              Comunidad y Conectividad
-            </h5>
-            <p class="text-muted-custom small mb-3">
-              Conéctate con otros amantes del cine y mantente al tanto de
-              nuestros estrenos globales semanales.
-            </p>
-
-            <!-- Botones de Redes Sociales Unificados -->
-            <div class="d-flex gap-2 mb-4">
-              <a
-                href="#"
-                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
-                aria-label="Comunidad"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#10b981"
-                  class="bi bi-people"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
-                aria-label="Ver ahora"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#c40812"
-                  class="bi bi-caret-right-square"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
-                  />
-                  <path
-                    d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
-                aria-label="Foro"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#3b82f6"
-                  class="bi bi-facebook"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
-                aria-label="Novedades"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#f59e0b"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="#3b82f6"
-                  class="bi bi-twitter"
-                  viewBox="0 0 16 16"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
-                  />
-                </svg>
-              </a>
-            </div>
-
-            <!-- Etiquetas de disponibilidad -->
-            <p
-              class="fw-bold small mb-2 text-muted-custom"
-              style="font-size: 0.75rem; letter-spacing: 1px"
-            >
-              DISPONIBLE EN TODAS LAS PANTALLAS
-            </p>
-            <div class="d-flex flex-wrap gap-2">
-              <span class="badge badge-custom p-2">4K ULTRA HD</span>
-              <span class="badge badge-custom p-2">DOLBY ATMOS</span>
-              <span class="badge badge-custom p-2">IMAX ENHANCED</span>
-            </div>
-          </div>
         </div>
-      </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
