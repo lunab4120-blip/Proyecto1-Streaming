@@ -1,0 +1,465 @@
+:root {
+    --surface-lowest: #0e0e13;
+}
+
+body {
+    background-color: var(--surface-lowest) !important;
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at 0% 5%,
+            rgba(255, 0, 0, 0.30),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(0, 80, 255, 0.30),
+            transparent 40%
+        ),
+        var(--surface-lowest);
+}
+
+.cajita {
+  width: 600px;
+  margin: 50px auto;
+}
+.cajitas {
+  
+  width: 100%;
+}
+
+.cajita1 {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #0e0e13;
+}
+.cajita1 img {
+  width: 300px;
+  height: 100px;
+}
+.cajita1 span {
+  border: none;
+  border-radius: 15px;
+  margin-left: auto;
+  width: 200px;
+  padding-left: 20px;
+  padding-top: 3px;
+  height: 30px;
+  background-color: #212127;
+  color: white;
+  font-size: small;
+  font-weight: 400;
+}
+.sombra {
+    box-shadow:
+     
+        -18px 0 35px rgba(0, 0, 0, 0.3),
+         18px 0 35px rgba(0, 0, 0, 0.3);
+}
+
+.cajita2 p {
+    color: hsl(7, 54%, 81%);
+}
+.cajita2 h1 {
+    color: #d1d5db;
+}
+.cajita2 {
+    height: 550px;
+    padding-top: 30px;
+    padding-left: 40px;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    background-color: #0e0e13;
+}
+.cajita2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        #e50914,
+        #9333ea,
+        #3b82f6
+    ) !important;
+    z-index: 9999;
+    border-radius: 15px 15px 0 0;
+}
+
+.mail,
+.contra {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+.mail span, .contra span {
+    color: #3b82f6;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.mail label, .contra label {
+    color: #d1d5db;
+    font-size: medium;
+    font-weight: 500;
+}
+.inputIcono {
+  position: relative;
+}
+.inputIcono input {
+  padding: 12px 15px 12px 45px;
+  box-sizing: border-box;
+}
+.inputIcono input::placeholder {
+color: #d1d5db;
+}
+.inputIcono i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #f59e0b;
+}
+.tap {
+  width: 508px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #2b2b32;
+  
+}
+.recordarme input {
+    width: 15px;
+    height: 15px;
+}
+.recordarme {
+    color: #d1d5db;
+    margin-left: 10px;
+}
+button {
+  width: 508px;
+  height: 50px;
+  background-color: #e50914;
+  border-radius: 10px !important;
+  border: none;
+  margin-top: 10px !important;
+}
+.cajita3 {
+  height: 200px;
+  border: none;
+  background-color: #0e0e13;
+  border-radius: 0 0 10px 10px;
+}
+.separador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.separador::before,
+.separador::after {
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: #555;
+}
+.separador span {
+    color: #d1d5db;
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+    
+}
+.redes  a {
+    width: 150px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    background-color: #1b1b20;
+}
+.contenedor3 {
+    padding: 10px 40px;
+    background-color:  #212127;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+   
+    
+}
+.contenedor3 span {
+    color: #3b82f6  ;
+    font-size: medium;
+    font-weight: 600;
+   
+}
+.pvh {
+    color:  hsl(7, 54%, 81%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.pvh a {
+    color:  hsl(7, 54%, 81%);
+    font-weight: 700;
+    text-decoration: none;
+}
+.pvh p {
+    margin: 0;
+    font-size: large;
+}
+.cajita4 {
+    background-color: transparent;
+   height: 80px;
+   padding-top: 20px;
+}
+.cajita4 a {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  color:  hsl(7, 54%, 81%);
+  text-decoration: none;
+}
+.Terminos {
+  display: flex;
+  justify-content: space-around;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .cajita {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .cajita1 {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .cajita1 img {
+        width: 230px;
+        height: auto;
+    }
+
+    .cajita1 span {
+        width: auto;
+        padding: 6px 12px;
+        font-size: 11px;
+        height: auto;
+    }
+
+    .cajita2 {
+        height: auto;
+        min-height: 550px;
+        padding: 30px;
+    }
+
+    .tap,
+    button {
+        width: 100%;
+    }
+
+    .mail,
+    .contra {
+        margin-right: 0;
+    }
+
+    .separador::before,
+    .separador::after {
+        width: 100px;
+    }
+
+    .redes a {
+        width: 30%;
+    }
+
+    .contenedor3 {
+        padding: 10px 25px;
+    }
+
+    .pvh p {
+        font-size: medium;
+    }
+
+    .cajita4 {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .Terminos {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 480px) {
+
+    .cajita {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .cajita1 {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0 15px;
+    }
+
+    .cajita1 img {
+        width: 210px;
+        height: auto;
+    }
+
+    .cajita1 span {
+        margin-left: 0;
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .cajita2 {
+        padding: 25px 20px;
+        min-height: auto;
+    }
+
+    .cajita2 h1 {
+        font-size: 28px;
+    }
+
+    .cajita2 p {
+        font-size: 14px;
+    }
+
+    .cajita2 p br {
+        display: none;
+    }
+
+    .mail,
+    .contra {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .mail span,
+    .contra span {
+        padding-bottom: 5px;
+    }
+
+    .inputIcono input,
+    .tap,
+    button {
+        width: 100%;
+        height: 48px;
+    }
+
+    .recordarme {
+        margin-left: 0;
+    }
+
+    button {
+        margin-top: 15px !important;
+    }
+
+    /* Separador */
+
+    .separador {
+        gap: 8px;
+    }
+
+    .separador::before,
+    .separador::after {
+        width: 50px;
+    }
+
+    .separador span {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* Redes */
+
+    .redes {
+        gap: 5px;
+        padding: 15px 10px;
+    }
+
+    .redes a {
+        width: 33%;
+        padding: 9px 5px;
+        font-size: 13px;
+    }
+
+    /* Parte inferior */
+
+    .contenedor3 {
+       
+    width: 100%;
+    height: 114px;
+    min-height: 90px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    gap: 10px;
+
+    }
+
+    .pvh {
+        align-items: flex-start;
+    }
+
+    .pvh p {
+        font-size: 13px;
+    }
+
+    .pvh a {
+        font-size: 13px;
+    }
+
+    .contenedor3 span {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* Términos */
+
+    .cajita4 {
+        padding: 15px 5px;
+        height: auto;
+    }
+
+    .Terminos {
+        justify-content: center;
+        gap: 5px;
+        font-size: 11px;
+    }
+
+    .cajita4 > a {
+        font-size: 12px;
+    }
+
+    /* Sombra */
+
+    .sombra {
+        box-shadow:
+            -12px 0 25px rgba(0, 0, 0, 0.3),
+             12px 0 25px rgba(0, 0, 0, 0.3);
+    }
+}
