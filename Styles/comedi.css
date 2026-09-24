@@ -1,0 +1,31 @@
+/*comedia */
+body {
+  background-color: var(--surface-lowest) !important;
+  font-family: sans-serif;
+}
+.card-custom {
+  background-color: var( --surface-base) !important;
+  border: none;
+  border-radius: 8px;
+  min-height: 550px;
+}
+.card-title {
+  color: var(--text-primary) !important;
+}
+p {
+  color: var(--text-secondary);
+}
+.texto-destacado{
+    color: var(--text-secondary);
+}
+
+.header-hero {
+  position: relative;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("https://lumiere-a.akamaihd.net/v1/images/chueco_main_las_1080x1350_d7552f7f.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 6rem 2rem;
+}
