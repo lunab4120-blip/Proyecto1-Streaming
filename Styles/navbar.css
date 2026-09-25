@@ -3,15 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    position: fixed;
+    position: fixed !important;
     width: 100%;
+    z-index: 1000;
 }
 img {
     width: 150px;
     height: 45px;
 }
 .logos .navbar-brand {
-   text-decoration: none;
+    text-decoration: none;
     font-size: 32px;
     transition: 0.3s;
 }
