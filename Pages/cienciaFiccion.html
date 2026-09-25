@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Películas de Ciencia Ficción</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tipografía de la guía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cienciaFiccion.html">
+</head>
+
+<body>
+
+<main class="container-fluid px-3 px-md-4 px-xl-5 py-3">
+
+    <!-- HERO -->
+    <section class="hero rounded-4 p-3 p-md-4 mb-3">
+        <div class="hero-content">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                COLECCIÓN ESTELAR CINEMÁTICA
+                <span class="eyebrow-count">120 Clásicos Modernos</span>
+            </div>
+
+            <h1>
+                Películas de <span class="cyan">Ciencia</span><br>
+                <span class="violet">Ficción</span>
+            </h1>
+
+            <p class="hero-description">
+                Viajes interdimensionales, futuros distópicos y misterios del cosmos.
+                Una odisea audiovisual transmitida con la máxima fidelidad cinematográfica en 4K UHD.
+            </p>
+
+            <div class="hero-actions">
+                <button class="mini-pill">
+                    <i class="fa-solid fa-wave-square"></i>
+                    <span>
+                        <b>TECNOLOGÍA CINEMÁTICA</b>
+                        <small>4K UHD · HDR10+</small>
+                    </span>
+                </button>
+
+                <button class="mini-pill">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>
+                        <b>Selección Especial</b>
+                        <small>Dolby Atmos · IMAX Enhanced</small>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTROS -->
+    <section class="filter-bar rounded-4 p-2 mb-3">
+        <div class="d-flex align-items-center gap-2 flex-wrap flex-grow-1">
+            <button class="filter-btn active">Todas las películas</button>
+            <button class="filter-btn">Distopías</button>
+            <button class="filter-btn">Espacio</button>
+            <button class="filter-btn">Androide</button>
+            <button class="filter-btn">Viajes en el tiempo</button>
+        </div>
+
+        <div class="d-flex align-items-center gap-2">
+            <button class="filter-btn">
+                <i class="fa-solid fa-filter me-1"></i> Más recientes
+            </button>
+            <button class="icon-btn" aria-label="Vista de cuadrícula">
+                <i class="fa-solid fa-grip"></i>
+            </button>
+            <button class="icon-btn" aria-label="Vista de lista">
+                <i class="fa-solid fa-list"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- GRID DE PELÍCULAS -->
+    <section class="row g-2 g-md-3">
+
+        <!-- 1 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-1">
+                    <div class="poster-top">
+                        <span class="quality">4K UHD</span>
+                        <span class="new">NUEVO</span>
+                    </div>
+                    <div class="planet planet-purple"></div>
+                    <div class="poster-title">
+                        <strong>HORIZONTE</strong>
+                        <span>SINGULAR</span>
+                    </div>
+                    <div class="poster-bottom">AUDIOVISUAL STUDIOS</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Horizonte Singular</h2>
+                    <div class="metadata">2034 <span>•</span> 2h 18m <span>•</span> Ciencia Ficción</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.8</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-2">
+                    <div class="poster-top">
+                        <span class="quality">4K UHD</span>
+                        <span class="new">NUEVO</span>
+                    </div>
+                    <div class="time-ring"></div>
+                    <div class="figure"></div>
+                    <div class="poster-title centered">
+                        <strong>CHRONOS</strong>
+                        <span>PARADOJA TEMPORAL</span>
+                    </div>
+                    <div class="poster-bottom">UNIVERSAL FUTURES</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Chronos: Paradoja Temporal</h2>
+                    <div class="metadata">2035 <span>•</span> 2h 10m <span>•</span> Ciencia Ficción</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.7</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-3">
+                    <div class="poster-top">
+                        <span class="quality">IMAX</span>
+                        <span class="new">NUEVO</span>
+                    </div>
+                    <div class="android-head"></div>
+                    <div class="poster-title centered">
+                        <strong>SINFONÍA</strong>
+                        <span>ANDROIDE</span>
+                    </div>
+                    <div class="poster-bottom">NEURAL PICTURES</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Sinfonía Androide</h2>
+                    <div class="metadata">2033 <span>•</span> 2h 05m <span>•</span> Androide</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.7</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-4">
+                    <div class="poster-top">
+                        <span class="quality">4K UHD</span>
+                        <span class="new">NUEVO</span>
+                    </div>
+                    <div class="starfield"></div>
+                    <div class="quantum-ring"></div>
+                    <div class="poster-title centered">
+                        <strong>EL ÚLTIMO</strong>
+                        <span>SALTO CUÁNTICO</span>
+                    </div>
+                    <div class="poster-bottom">QUANTUM FILMS</div>
+                </div>
+                <div class="movie-info">
+                    <h2>El Último Salto Cuántico</h2>
+                    <div class="metadata">2033 <span>•</span> 2h 20m <span>•</span> Espacio</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.9</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-5">
+                    <div class="poster-top">
+                        <span class="quality">4K UHD</span>
+                        <span class="new">NUEVO</span>
+                    </div>
+                    <div class="city"></div>
+                    <div class="soldier"></div>
+                    <div class="poster-title centered">
+                        <strong>CIBERPUNK</strong>
+                        <span>ZERO</span>
+                    </div>
+                    <div class="poster-bottom">NEON DISTRICT</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Ciberpunk Zero</h2>
+                    <div class="metadata">2034 <span>•</span> 2h 12m <span>•</span> Distopía</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.5</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-6">
+                    <div class="poster-top">
+                        <span class="quality">4K UHD</span>
+                    </div>
+                    <div class="planet-blue"></div>
+                    <div class="ship"></div>
+                    <div class="poster-title centered">
+                        <strong>EXILIO</strong>
+                        <span>ESTELAR</span>
+                    </div>
+                    <div class="poster-bottom">ORBITAL CINEMA</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Exilio Estelar</h2>
+                    <div class="metadata">2032 <span>•</span> 2h 08m <span>•</span> Espacio</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.4</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-7">
+                    <div class="poster-top">
+                        <span class="quality">4K UHD</span>
+                        <span class="new">NUEVO</span>
+                    </div>
+                    <div class="mirror"></div>
+                    <div class="poster-title centered">
+                        <strong>ESPEJOS</strong>
+                        <span>DE SILICIO</span>
+                    </div>
+                    <div class="poster-bottom">SYNTHETIC STUDIOS</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Espejos de Silicio</h2>
+                    <div class="metadata">2036 <span>•</span> 2h 15m <span>•</span> Androide</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.6</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-6 col-md-4 col-xl-3">
+            <article class="movie-card">
+                <div class="poster poster-8">
+                    <div class="poster-top">
+                        <span class="quality">IMAX</span>
+                    </div>
+                    <div class="galaxy"></div>
+                    <div class="planet-small"></div>
+                    <div class="poster-title centered">
+                        <strong>BIFURCACIÓN</strong>
+                        <span>GALÁCTICA</span>
+                    </div>
+                    <div class="poster-bottom">COSMOS PICTURES</div>
+                </div>
+                <div class="movie-info">
+                    <h2>Bifurcación Galáctica</h2>
+                    <div class="metadata">2030 <span>•</span> 2h 20m <span>•</span> Espacio</div>
+                    <div class="rating"><i class="fa-solid fa-star"></i> 8.9</div>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- FOOTER / PAGINACIÓN -->
+    <section class="bottom-bar rounded-4 mt-3 p-2 px-3">
+        <div class="catalog-info">
+            <i class="fa-solid fa-layer-group"></i>
+            Página <strong>1</strong> de 12
+            <span>•</span>
+            <b>120 títulos disponibles</b>
+        </div>
+
+        <nav aria-label="Paginación">
+            <ul class="pagination pagination-sm mb-0">
+                <li class="page-item disabled"><button class="page-link">‹</button></li>
+                <li class="page-item active"><button class="page-link">1</button></li>
+                <li class="page-item"><button class="page-link">2</button></li>
+                <li class="page-item"><button class="page-link">3</button></li>
+                <li class="page-item"><button class="page-link">4</button></li>
+                <li class="page-item"><button class="page-link">5</button></li>
+                <li class="page-item"><button class="page-link next">Siguiente <i class="fa-solid fa-chevron-right"></i></button></li>
+            </ul>
+        </nav>
+    </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            if (button.classList.contains('active')) return;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            button.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>
