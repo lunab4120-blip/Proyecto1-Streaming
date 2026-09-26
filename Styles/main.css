@@ -1,7 +1,8 @@
 .section1 {
     height: 100vh;
 }
-.sectionMain{
+
+.sectionMain {
     background-color: var(--surface-lowest);
     display: flex;
 }
@@ -49,40 +50,43 @@ button>a {
     }
 }
 
-.cardCss{
+.cardCss {
     background-color: var(--surface-container) !important;
     min-height: 650px;
     max-height: 650px;
-    
 
-    &div>h5{
+
+    &div>h5 {
         color: var(--text-primary);
     }
 }
-.card-img{
-        min-height: 400px;
-    }
 
-.card-body>.card-text{
-    display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+.card-img {
+    min-height: 400px;
 }
-.card-body>a{
+
+.card-body>.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-body>a {
     display: flex;
     justify-content: center;
     background-color: #e50914;
     color: var(--text-secondary);
 }
-.card-body>a:hover{
+
+.card-body>a:hover {
     background-color: var(--color-accent-cyan) !important;
 }
-.section3>div{
-    color: white;
-    height: 250px ;
+
+.section3>div {
+    height: 250px;
     border-radius: 20px;
-    background: linear-gradient(135deg,           
+    background: linear-gradient(135deg,
             #8b344e 0%,
             /* Toque vino/carmesí oscuro profundo */
             #352654 50%,
@@ -96,19 +100,200 @@ button>a {
     justify-content: space-between;
     align-items: center;
 
-    .divSub1{
+    .divSub1 {
         width: 75%;
 
-        ul{
-            list-style-type: none;
-        
+        h2 {
+            color: var(--text-primary);
         }
-        .spanDivSub1{
+
+        p {
+            color: var(--text-secondary);
+        }
+
+        ul {
+            list-style-type: none;
+            color: var(--text-secondary);
+            font-weight: 600;
+
+        }
+
+        .spanDivSub1 {
             font-weight: 800;
             color: var(--color-primary);
+
         }
     }
-    .divSub2{
+
+    .divSub2 {
         width: 25%;
+        height: 100%;
+
+        .divCircle1 {
+            border: 6px dashed var(--surface-border);
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+
+            .divCircle2 {
+                border: 1px solid var(--surface-border);
+                border-radius: 100%;
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+
+        /* boton  */
+        .btnSubs {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 1rem 2.5rem;
+
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            background: #f20d20;
+            border: 2px solid #ff2638;
+            border-radius: 50px;
+
+            cursor: pointer;
+            overflow: hidden;
+
+            box-shadow:
+                0 0 10px rgba(255, 20, 40, 0.6),
+                0 0 25px rgba(255, 20, 40, 0.35);
+
+            transition: all 0.3s ease;
+        }
+
+        /* Texto */
+        .btnSubs span {
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+
+            color: #fff;
+
+            text-shadow:
+                0 0 5px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Glitch */
+        .btnSubs span::before,
+        .btnSubs span::after {
+            content: attr(data-text);
+
+            position: absolute;
+            left: 0;
+
+            opacity: 0;
+            pointer-events: none;
+
+            transition: all 0.3s ease;
+        }
+
+        /* Glitch rojo claro */
+        .btnSubs span::before {
+            top: -2px;
+            color: #ff6b75;
+
+            animation: glitchRed 2s infinite;
+        }
+
+        /* Glitch oscuro */
+        .btnSubs span::after {
+            bottom: -2px;
+            color: #ff9da5;
+
+            animation: glitchRed 2s infinite reverse;
+        }
+
+        /* Línea que recorre el botón */
+        .btnSubs .scan-line {
+            position: absolute;
+
+            left: 0;
+            top: 0;
+
+            width: 100%;
+            height: 2px;
+
+            background: linear-gradient(to right,
+                    transparent,
+                    rgba(255, 255, 255, 0.8),
+                    transparent);
+
+            filter: blur(1px);
+
+            animation: scanRed 2s linear infinite;
+
+            pointer-events: none;
+        }
+
+
+        /* HOVER */
+        .btnSubs:hover {
+            color: #fff;
+            background: #ff1529;
+            border-color: #ff4a58;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 0 12px rgba(255, 20, 40, 0.8),
+                0 0 30px rgba(255, 20, 40, 0.6),
+                0 0 50px rgba(255, 20, 40, 0.25);
+        }
+
+
+        /* GLITCH */
+        @keyframes glitchRed {
+
+            0%,
+            100% {
+                transform: translateX(0);
+                opacity: 0;
+            }
+
+            20% {
+                transform: translateX(-4px);
+                opacity: 0.4;
+            }
+
+            40% {
+                transform: translateX(4px);
+                opacity: 0.6;
+            }
+
+            60% {
+                transform: translateX(-2px);
+                opacity: 0.4;
+            }
+
+            80% {
+                transform: translateX(2px);
+                opacity: 0.2;
+            }
+        }
+
+
+        /* SCAN */
+        @keyframes scanRed {
+
+            0% {
+                top: -10%;
+            }
+
+            100% {
+                top: 110%;
+            }
+        }
     }
 }
