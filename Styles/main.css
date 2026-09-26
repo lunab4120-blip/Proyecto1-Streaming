@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-h2>span {
+.spanTitle {
     color: var(--color-accent-cyan);
 }
 
@@ -77,4 +77,38 @@ button>a {
 }
 .card-body>a:hover{
     background-color: var(--color-accent-cyan) !important;
+}
+.section3>div{
+    color: white;
+    height: 250px ;
+    border-radius: 20px;
+    background: linear-gradient(135deg,           
+            #8b344e 0%,
+            /* Toque vino/carmesí oscuro profundo */
+            #352654 50%,
+            /* Fusión con tono carbón / violeta suave */
+            #201a36 100%
+            /* Superficie base obsidiana */
+        );
+    /* position: relative; */
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .divSub1{
+        width: 75%;
+
+        ul{
+            list-style-type: none;
+        
+        }
+        .spanDivSub1{
+            font-weight: 800;
+            color: var(--color-primary);
+        }
+    }
+    .divSub2{
+        width: 25%;
+    }
 }
