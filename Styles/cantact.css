@@ -1,0 +1,15 @@
+.sectionForm{
+    min-height: 100vh;
+}
+.tag{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+}
+.input404{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.inputTextarea{
+    border: 1px solid black;
+}
