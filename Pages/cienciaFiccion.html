@@ -1,317 +1,663 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ciencia Ficción</title>
+    <link rel="stylesheet" href="../Styles/cienciaFiccion.css" />
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <link rel="stylesheet" href="../Styles/footer.css" />
+    <link rel="stylesheet" href="../Styles/navbar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-    <title>Películas de Ciencia Ficción</title>
+  <body>
+    <nav>
+      <div class="navbar px-5">
+        <div class="logos">
+          <a href="">
+            <img src="../Assets/img/logoHOTflix.png" alt="Logo" />
+          </a>
+          <a class="navbar-brand" href="">
+            <span class="hot">HOT</span><span class="flix">flix</span>
+          </a>
+          <a class="in" href="">Inicio</a>
+          <a class="in" href="">Suscripcion</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"> ☰ </label>
+        <div class="inicioS menu-mobile">
+          <form class="d-flex" role="search">
+            <input
+              type="search"
+              placeholder="🔍 Buscar series y peliculas..."
+              aria-label="Search"
+            />
+          </form>
+          <a class="iS" href="./Pages/login.html">Iniciar Sesion</a>
+          <a class="sus" href="">Suscribirse</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container py-5">
+      <!-- 1. CABECERA -->
+      <div class="mb-4 header-hero shadow-lg">
+        <span class="badge bg-danger mb-2">CATEGORÍA EXCLUSIVA</span>
+        <small class="text-light ms-2">• 8 PELICULAS DISPONIBLES</small>
+        <h1 class="fw-bold display-5 text-info">
+          PELICULAS DE CIENCIA FICCIÓN
+        </h1>
+        <p class="text-light lead">
+          Explora mundos desconocidos, futuros sorprendentes y tecnologías
+          increíbles. Disfruta de las mejores películas de ciencia ficción, con
+          aventuras espaciales, inteligencia artificial, viajes en el tiempo y
+          mucho más.
+        </p>
+      </div>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- 2. BARRA DE FILTROS -->
+      <div class="d-flex flex-wrap gap-2 mb-4 align-items-center">
+        <button class="btn btn-sm text-white" style="background-color: #3b82f6">
+          Más populares
+        </button>
+        <button class="btn btn-dark btn-sm border-secondary text-light">
+          Recién agregadas
+        </button>
+        <button class="btn btn-dark btn-sm border-secondary text-light">
+          Mejor valoradas
+        </button>
+        <div class="ms-auto">
+          <select
+            class="form-select form-select-sm bg-dark text-light border-secondary"
+          >
+            <option selected>Todas las duraciones</option>
+            <option value="1">Cortas</option>
+            <option value="2">Largas</option>
+          </select>
+        </div>
+      </div>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <!-- Tarjeta 1-->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/stvpCDIWrNxOSavPhHWr_lIIqaoJk8sQSlBga5qP2CF74ZkUefyT1HKcX4j7lkQfQMmqKbg9aP-ZG0clfqMhYO5-1GiT650iqMsdUBvNVeO0aLFLwlflDnUVq_hZvs_747puzlHwsFaYhyHFMjKTqfOAugraS_dCnzRkQquJ47YcIbhvjq1ANgpdSLbR600Y?purpose=fullsize"
+                alt="Supergirl"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">86% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Supergirl</h5>
+              <p class="card-text">
+                Kara Zor-El se lanza a una aventura intergaláctica que la
+                enfrenta a nuevos enemigos y a su pasado.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    108 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Tipografía de la guía -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <!-- Tarjeta 2 -->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/ng-0DmKdz8P6Nj2F6x-G45cSfRNpPWJgJBvN9NT8HyDSen8eMt9WItzqv766tJdl5a0aznng1-dy5u9oWJ2QwYhy7-mW8zovh-fLpAOP4HWDzh14_evb9dCqEo10XXkHIZyct_DbwaAzCTswNgubj0s4plOYL2O6zllxej6Om2Bn4hlRoxY-p23AzvvjT8sP?purpose=fullsize"
+                alt="Spider-Man: Brand New Day"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">99% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Spiderman: Brand New Day</h5>
+              <p class="card-text">
+                Peter Parker comienza una nueva etapa como Spider-Man mientras
+                nuevas amenazas vuelven a poner en peligro su vida.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    145 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <link rel="stylesheet" href="cienciaFiccion.html">
-</head>
+        <!-- Tarjeta 3 -->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/Buh5HCY2PNbEsaCZwwYAR5bFiKe6tJ-Ofp_LDIbO_ZHF4_iM0S12fyhybDj5edFln7rscOtnxNcpb25_H41L-fAz2Dgcw6KYtbwS-i5MvQlrAlpM9JWt8nEEONDTmOIk7NdYHTpC9wGDYY9n2YQNREf4G6QrX-SsArIwKb3zzc7-Hw2XStNFZMGNX9Csanzn?purpose=fullsize"
+                alt="The End of Oak Street"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">91% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">El final de la Calle Oak</h5>
+              <p class="card-text">
+                Un misterioso evento cósmico transporta un vecindario entero a
+                un lugar desconocido, donde una familia deberá luchar por
+                sobrevivir.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    99 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<body>
+        <!-- Tarjeta 4-->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/NMXEyMAkDxTL3tFYUKOW6cuNCg9ah9TlLYhOTTLL0JeWrdQZwFPv8FnVngSuBz1DgLurOXX3CFGIf1Woo_xkwADuHL-xWg4sAmespgPrFUUxw1_oeuDYbr4fusdItyE0GHJzG0xKVsutgvrUg13ZBc1cLosCKf2mZYsCpQ2OtUKp9GnJzNTJ0k_DcOJfKtzl?purpose=fullsize"
+                alt="Hot Spot"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">88% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Hot Spot</h5>
+              <p class="card-text">
+                En un futuro controlado por una inteligencia artificial
+                consciente, un detective investiga un asesinato que amenaza con
+                derrumbar el sistema.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    100 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<main class="container-fluid px-3 px-md-4 px-xl-5 py-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+        <!-- Tarjeta 5 -->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/CTQMJ97qxyuWDv4D_vPWXmlADtrGxpcVP6P5iUVLsBtqxKEWQ3Pue3PFoTG5fNbZ1xcy6Q4wBp3mFgutCk_cdgX0MyXzeK-_w7EAr2hfhvoJtQnjr4720xSGxl3g2s0l-pyqAMWYt2oyCCgxyyeQGdS9I9a5JJDpxJ6_M7_uetEotTj3EtAl0o8S2Z5cWYJr?purpose=fullsize"
+                alt="The Dog Stars"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">64% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">The Dog Stars</h5>
+              <p class="card-text">
+                Tras una pandemia devastadora, un piloto abandona su refugio
+                después de recibir una misteriosa transmisión de radio que
+                podría conducirlo hacia otros supervivientes.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    118 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- HERO -->
-    <section class="hero rounded-4 p-3 p-md-4 mb-3">
-        <div class="hero-content">
-            <div class="eyebrow">
-                <span class="eyebrow-dot"></span>
-                COLECCIÓN ESTELAR CINEMÁTICA
-                <span class="eyebrow-count">120 Clásicos Modernos</span>
+        <!-- Tarjeta 6 -->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/5dwUwJqif3qvjn6UnEnSZGZm_2oyHWFyBk1M8Xfmr7yY7gn-ru58xeLDQnjRGa2xy4Cfz3G60j57Dg7TlXPeLVE165HiuhPUQ1tRpfdZVpkggISCyQQMUOCq74b4JgpkJch_D69XZoDGe0jW370cMzc-VuiZlZ9kgY67ooLYZal2qvIJpp2pLswPZArq1osg?purpose=fullsize"
+                alt="Project Hail Mary"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">94% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Proyecto Ave María</h5>
+              <p class="card-text">
+                Un profesor despierta solo en una nave espacial y descubre que
+                su misión puede ser la última esperanza para salvar a la Tierra.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    156 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/ETNLO-kc8bTvGqKHNIaormy8NZ9ZRhAT3IBTTwOSLna074wuneGUf_70njBbqCkVw0C1U9cIeCenw-xjIuodDeOEnaGNXaremctqBkovzquBETYY4QlSz6AG1_gPvjRcEvX95sdv3FE_FCuVJ7uCxmK_npiBxoD7sJJ16_LjRGNuDldxcLuFX241ukql0nke?purpose=fullsize"
+                alt="Onslaught"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">84% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Onslaught</h5>
+              <p class="card-text">
+                Una francotiradora del ejército intenta proteger a su hija
+                cuando un grupo de supersoldados modificados genéticamente
+                escapa en el desierto.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    92 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 8-->
+        <div class="col">
+          <div class="card card-custom">
+            <div
+              class="position-relative"
+              style="height: 320px; overflow: hidden"
+            >
+              <img
+                src="https://images.openai.com/static-rsc-4/084nUi2A9qQfy44R8vDXtB-AoOzGFEGiOoH3ybhLFrefUeyyVxLgcrsOcLPTyGbyw_ktMvnEqIykzMPw4lUMIx3Uj5Y9v4J8g9P6cHciK6wCrY76j6UlsnLgP2WlvI5FUJ10Mjs6eOCpDCZaeqAo0WQG6DtZq5_Vf7IZ8B14mMSux5k3-3UDXPEHpDMlg_to?purpose=fullsize"
+                alt="Hope"
+                class="w-100 h-100"
+                style="object-fit: cover"
+              />
+              <div class="position-absolute top-0 start-0 p-2 d-flex gap-1">
+                <span class="badge bg-dark text-light">PELICULA</span>
+                <span class="badge bg-danger">ESTRENO</span>
+                <span class="badge bg-success">75% Match</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6 fw-bold">Hope</h5>
+              <p class="card-text">
+                Un remoto pueblo surcoreano se ve envuelto en un conflicto
+                extraordinario cuando una misteriosa amenaza extraterrestre
+                irrumpe en sus vidas.
+              </p>
+              <div class="mt-auto">
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <button class="btn btn-outline-light btn-sm w-50 me-1">
+                    160 minutos
+                  </button>
+                  <button class="btn btn-primary btn-sm w-50 ms-1">
+                    Mas detalles
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. PAGINACIÓN -->
+      <div class="d-flex justify-content-between align-items-center mt-5">
+        <span class="texto-destacado"
+          >Mostrando 8 de 26 peliculas de ciencia ficción</span
+        >
+        <ul class="pagination pagination-sm mb-0">
+          <li class="page-item disabled">
+            <a
+              class="page-link bg-dark text-secondary border-secondary"
+              href="#"
+              >Anterior</a
+            >
+          </li>
+          <li class="page-item active">
+            <a
+              class="page-link border-0"
+              href="#"
+              style="background-color: #3b82f6"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link bg-dark text-light border-secondary" href="#"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link bg-dark text-light border-secondary" href="#"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link bg-dark text-light border-secondary" href="#"
+              >Siguiente</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer-bg text-light pt-5 pb-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- COLUMNA 1: LOGO Y DESCRIPCIÓN -->
+          <div class="col">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <!-- Icono SVG del Logo -->
+              <img
+                class="logo"
+                src="../Assets/img/logoHOTflix.png"
+                alt="Logo de Hotflix"
+                style="max-height: 70px; width: auto"
+              />
+              <span class="fw-bold fs-4 tracking-wide">
+                <span style="color: #c40812">HOT</span
+                ><span class="text-light">FLIX</span>
+              </span>
             </div>
 
-            <h1>
-                Películas de <span class="cyan">Ciencia</span><br>
-                <span class="violet">Ficción</span>
-            </h1>
-
-            <p class="hero-description">
-                Viajes interdimensionales, futuros distópicos y misterios del cosmos.
-                Una odisea audiovisual transmitida con la máxima fidelidad cinematográfica en 4K UHD.
+            <p class="small lh-base mb-4 Lechuga text-description">
+              Hotflix es la plataforma definitiva de streaming cinemático.
+              Transmisión ultra inmersiva en 4K UHD, sonido espacial envolvente
+              y las producciones más exclusivas de cine y televisión.
             </p>
 
-            <div class="hero-actions">
-                <button class="mini-pill">
-                    <i class="fa-solid fa-wave-square"></i>
-                    <span>
-                        <b>TECNOLOGÍA CINEMÁTICA</b>
-                        <small>4K UHD · HDR10+</small>
-                    </span>
-                </button>
+            <p class="text-muted-custom small mb-0">
+              © 2026 Hotflix Inc. Todos los derechos reservados.
+            </p>
+          </div>
 
-                <button class="mini-pill">
-                    <i class="fa-solid fa-certificate"></i>
-                    <span>
-                        <b>Selección Especial</b>
-                        <small>Dolby Atmos · IMAX Enhanced</small>
-                    </span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FILTROS -->
-    <section class="filter-bar rounded-4 p-2 mb-3">
-        <div class="d-flex align-items-center gap-2 flex-wrap flex-grow-1">
-            <button class="filter-btn active">Todas las películas</button>
-            <button class="filter-btn">Distopías</button>
-            <button class="filter-btn">Espacio</button>
-            <button class="filter-btn">Androide</button>
-            <button class="filter-btn">Viajes en el tiempo</button>
-        </div>
-
-        <div class="d-flex align-items-center gap-2">
-            <button class="filter-btn">
-                <i class="fa-solid fa-filter me-1"></i> Más recientes
-            </button>
-            <button class="icon-btn" aria-label="Vista de cuadrícula">
-                <i class="fa-solid fa-grip"></i>
-            </button>
-            <button class="icon-btn" aria-label="Vista de lista">
-                <i class="fa-solid fa-list"></i>
-            </button>
-        </div>
-    </section>
-
-    <!-- GRID DE PELÍCULAS -->
-    <section class="row g-2 g-md-3">
-
-        <!-- 1 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-1">
-                    <div class="poster-top">
-                        <span class="quality">4K UHD</span>
-                        <span class="new">NUEVO</span>
-                    </div>
-                    <div class="planet planet-purple"></div>
-                    <div class="poster-title">
-                        <strong>HORIZONTE</strong>
-                        <span>SINGULAR</span>
-                    </div>
-                    <div class="poster-bottom">AUDIOVISUAL STUDIOS</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Horizonte Singular</h2>
-                    <div class="metadata">2034 <span>•</span> 2h 18m <span>•</span> Ciencia Ficción</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.8</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 2 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-2">
-                    <div class="poster-top">
-                        <span class="quality">4K UHD</span>
-                        <span class="new">NUEVO</span>
-                    </div>
-                    <div class="time-ring"></div>
-                    <div class="figure"></div>
-                    <div class="poster-title centered">
-                        <strong>CHRONOS</strong>
-                        <span>PARADOJA TEMPORAL</span>
-                    </div>
-                    <div class="poster-bottom">UNIVERSAL FUTURES</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Chronos: Paradoja Temporal</h2>
-                    <div class="metadata">2035 <span>•</span> 2h 10m <span>•</span> Ciencia Ficción</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.7</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 3 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-3">
-                    <div class="poster-top">
-                        <span class="quality">IMAX</span>
-                        <span class="new">NUEVO</span>
-                    </div>
-                    <div class="android-head"></div>
-                    <div class="poster-title centered">
-                        <strong>SINFONÍA</strong>
-                        <span>ANDROIDE</span>
-                    </div>
-                    <div class="poster-bottom">NEURAL PICTURES</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Sinfonía Androide</h2>
-                    <div class="metadata">2033 <span>•</span> 2h 05m <span>•</span> Androide</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.7</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 4 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-4">
-                    <div class="poster-top">
-                        <span class="quality">4K UHD</span>
-                        <span class="new">NUEVO</span>
-                    </div>
-                    <div class="starfield"></div>
-                    <div class="quantum-ring"></div>
-                    <div class="poster-title centered">
-                        <strong>EL ÚLTIMO</strong>
-                        <span>SALTO CUÁNTICO</span>
-                    </div>
-                    <div class="poster-bottom">QUANTUM FILMS</div>
-                </div>
-                <div class="movie-info">
-                    <h2>El Último Salto Cuántico</h2>
-                    <div class="metadata">2033 <span>•</span> 2h 20m <span>•</span> Espacio</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.9</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 5 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-5">
-                    <div class="poster-top">
-                        <span class="quality">4K UHD</span>
-                        <span class="new">NUEVO</span>
-                    </div>
-                    <div class="city"></div>
-                    <div class="soldier"></div>
-                    <div class="poster-title centered">
-                        <strong>CIBERPUNK</strong>
-                        <span>ZERO</span>
-                    </div>
-                    <div class="poster-bottom">NEON DISTRICT</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Ciberpunk Zero</h2>
-                    <div class="metadata">2034 <span>•</span> 2h 12m <span>•</span> Distopía</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.5</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 6 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-6">
-                    <div class="poster-top">
-                        <span class="quality">4K UHD</span>
-                    </div>
-                    <div class="planet-blue"></div>
-                    <div class="ship"></div>
-                    <div class="poster-title centered">
-                        <strong>EXILIO</strong>
-                        <span>ESTELAR</span>
-                    </div>
-                    <div class="poster-bottom">ORBITAL CINEMA</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Exilio Estelar</h2>
-                    <div class="metadata">2032 <span>•</span> 2h 08m <span>•</span> Espacio</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.4</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 7 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-7">
-                    <div class="poster-top">
-                        <span class="quality">4K UHD</span>
-                        <span class="new">NUEVO</span>
-                    </div>
-                    <div class="mirror"></div>
-                    <div class="poster-title centered">
-                        <strong>ESPEJOS</strong>
-                        <span>DE SILICIO</span>
-                    </div>
-                    <div class="poster-bottom">SYNTHETIC STUDIOS</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Espejos de Silicio</h2>
-                    <div class="metadata">2036 <span>•</span> 2h 15m <span>•</span> Androide</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.6</div>
-                </div>
-            </article>
-        </div>
-
-        <!-- 8 -->
-        <div class="col-6 col-md-4 col-xl-3">
-            <article class="movie-card">
-                <div class="poster poster-8">
-                    <div class="poster-top">
-                        <span class="quality">IMAX</span>
-                    </div>
-                    <div class="galaxy"></div>
-                    <div class="planet-small"></div>
-                    <div class="poster-title centered">
-                        <strong>BIFURCACIÓN</strong>
-                        <span>GALÁCTICA</span>
-                    </div>
-                    <div class="poster-bottom">COSMOS PICTURES</div>
-                </div>
-                <div class="movie-info">
-                    <h2>Bifurcación Galáctica</h2>
-                    <div class="metadata">2030 <span>•</span> 2h 20m <span>•</span> Espacio</div>
-                    <div class="rating"><i class="fa-solid fa-star"></i> 8.9</div>
-                </div>
-            </article>
-        </div>
-
-    </section>
-
-    <!-- FOOTER / PAGINACIÓN -->
-    <section class="bottom-bar rounded-4 mt-3 p-2 px-3">
-        <div class="catalog-info">
-            <i class="fa-solid fa-layer-group"></i>
-            Página <strong>1</strong> de 12
-            <span>•</span>
-            <b>120 títulos disponibles</b>
-        </div>
-
-        <nav aria-label="Paginación">
-            <ul class="pagination pagination-sm mb-0">
-                <li class="page-item disabled"><button class="page-link">‹</button></li>
-                <li class="page-item active"><button class="page-link">1</button></li>
-                <li class="page-item"><button class="page-link">2</button></li>
-                <li class="page-item"><button class="page-link">3</button></li>
-                <li class="page-item"><button class="page-link">4</button></li>
-                <li class="page-item"><button class="page-link">5</button></li>
-                <li class="page-item"><button class="page-link next">Siguiente <i class="fa-solid fa-chevron-right"></i></button></li>
+          <!-- COLUMNA 2: INSTITUCIONAL -->
+          <div class="col ps-md-5">
+            <h5 class="fw-bold mb-3 fs-6 text-light">Institucional</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2">
+              <li>
+                <a
+                  href="/acerca-de-nosotros"
+                  class="text-muted-custom text-decoration-none small hover-link"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contacto"
+                  class="text-muted-custom text-decoration-none small hover-link"
+                  >Contacto por consultas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/terminos-privacidad"
+                  class="text-muted-custom text-decoration-none small hover-link"
+                  >Términos y Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/ayuda"
+                  class="text-muted-custom text-decoration-none small hover-link"
+                  >Centro de Ayuda</a
+                >
+              </li>
             </ul>
-        </nav>
-    </section>
+          </div>
 
-</main>
+          <!-- COLUMNA 3: COMUNIDAD Y PANTALLAS -->
+          <div class="col">
+            <h5 class="fw-bold mb-3 fs-6 text-light">
+              Comunidad y Conectividad
+            </h5>
+            <p class="text-muted-custom small mb-3">
+              Conéctate con otros amantes del cine y mantente al tanto de
+              nuestros estrenos globales semanales.
+            </p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.querySelectorAll('.filter-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            if (button.classList.contains('active')) return;
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            button.classList.add('active');
-        });
-    });
-</script>
+            <!-- Botones de Redes Sociales Unificados -->
+            <div class="d-flex gap-2 mb-4">
+              <a
+                href="#"
+                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                aria-label="Comunidad"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#10b981"
+                  class="bi bi-people"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                aria-label="Ver ahora"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#c40812"
+                  class="bi bi-caret-right-square"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                  />
+                  <path
+                    d="M5.795 12.456A.5.5 0 0 1 5.5 12V4a.5.5 0 0 1 .832-.374l4.5 4a.5.5 0 0 1 0 .748l-4.5 4a.5.5 0 0 1-.537.082"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                aria-label="Foro"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3b82f6"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                aria-label="Novedades"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#f59e0b"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="btn btn-social rounded-circle d-flex align-items-center justify-content-center"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#3b82f6"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                  />
+                </svg>
+              </a>
+            </div>
 
-</body>
+            <!-- Etiquetas de disponibilidad -->
+            <p
+              class="fw-bold small mb-2 text-muted-custom"
+              style="font-size: 0.75rem; letter-spacing: 1px"
+            >
+              DISPONIBLE EN TODAS LAS PANTALLAS
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge badge-custom p-2">4K ULTRA HD</span>
+              <span class="badge badge-custom p-2">DOLBY ATMOS</span>
+              <span class="badge badge-custom p-2">IMAX ENHANCED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
