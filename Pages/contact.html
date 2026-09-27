@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../Styles/style.css">
     <link rel="stylesheet" href="../Styles/footer.css">
     <link rel="stylesheet" href="../Styles/navbar.css">
-    <link rel="stylesheet" href="../Styles/cantact.css">
+    <link rel="stylesheet" href="../Styles/contact.css">
 </head>
 
 <body>
@@ -41,29 +41,32 @@
     <main>
         <section class="sectionForm d-flex align-items-center">
             <div class="container tag py-2">
-                <form action="" class="d-flex flex-column">
+                <form action="https://formsubmit.co/lunab4120@gmail.com" method="POST" class="d-flex flex-column">
                     <h1>Contactanos</h1>
                     <p>Comunícate con nostros para brindarte la ayuda en lo que necesites</p>
 
-                    <label for="name">Nombre</label>
-                    <input class="input404" placeholder="Fulano Detal" type="text" id="name" required>
+                    <label class="labelForm my-2" for="name">Nombre</label>
+                    <input class="input404" placeholder="Fulano Detal" type="text" id="name" name="name" required>
 
-                    <label for="number"> Numero</label>
-                    <input class="input404" placeholder="123456789" type="number" id="number" required>
+                    <label class="labelForm my-2" for="number"> Numero</label>
+                    <input class="input404" placeholder="123456789" type="number" id="number" name="Numero" required>
 
-                    <label for="Email">Email</label>
-                    <input class="input404" placeholder="Fulano@Detal" type="email" id="Email" required>
+                    <label class="labelForm my-2" for="Email">Email</label>
+                    <input class="input404" placeholder="Fulano@Detal" type="email" id="Email" name="email" required>
 
-                    <label for="mensaje">¿Cual es tu consulta?</label>
-                    <textarea class="input404 inputTextarea" maxlength="1000" placeholder="Maximo de 100 caracteres" name="mensaje" id="mensaje" required></textarea>
+                    <label class="labelForm my-2" for="mensaje">¿Cual es tu consulta?</label>
+                    <textarea class="input404 inputTextarea" maxlength="300" placeholder="Maximo de 300 caracteres" name="mensaje" id="mensaje" required></textarea>
 
                     <div>
-                        <input type="checkbox" id="check" required>
-                        <label for="check"><a href="../Pages/error404.html">Terminos y condiciones</a></label> <br> 
-                        <input type="checkbox" id="check" required>
-                        <label for="check"><a href="../Pages/error404.html"> Politicas de Privacidad</a></label>
+                        <input type="checkbox" id="check" name="check1" required>
+                        <label class="labelForm" for="check"><a href="../Pages/error404.html">Terminos y condiciones</a></label> <br> 
+                        <input type="checkbox" id="check" name="check2" required>
+                        <label class="labelForm" for="check"><a href="../Pages/error404.html"> Politicas de Privacidad</a></label>
                     </div>
-                    <button>subir</button>
+                    <button class="mt-2 btn btnSend">Enviar</button>
+
+                    <input type="hidden" name="_next" value="https://streaming-hotflix.netlify.app">
+                    <input type="hidden" name="_captcha" value="false" >
                 </form>
             </div>
         </section>
