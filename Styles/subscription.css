@@ -1,0 +1,654 @@
+body {
+  background-color: #0e0e13;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+ }
+.suscripcion {
+  width: 100%;
+  max-width: 1400px;
+  margin: 50px auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+/* Textos superiores */
+.suscripcion > span {
+  color: #f59e0b;
+  background-color: #555;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 600px;
+  border-radius: 10px;
+}
+.suscripcion h1 {
+  margin-top: 20px;
+  color: #d1d5db;
+  font-weight: 900;
+}
+.suscripcion > p {
+  max-width: 750px;
+  margin: 15px auto 25px;
+  color: hsl(7, 54%, 81%);
+}
+#mensual,
+#anual {
+  display: none;
+}
+.facturacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+
+  /* fondo negro */
+  background-color: #1b1b20;
+  padding: 5px;
+  border-radius: 30px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.facturacion label {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 300px;
+  color: white;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+/* MENSUAL SELECCIONADO */
+#mensual:checked ~ .facturacion label[for="mensual"] {
+  background-color: #e50914;
+  color: white;
+}
+
+/* ANUAL SELECCIONADO */
+#anual:checked ~ .facturacion label[for="anual"] {
+  background-color: #e50914;
+  color: white;
+}
+
+/* AHORRA 20% */
+.facturacion label span {
+  color: hsl(191, 74%, 59%);
+  background-color: hsl(196, 42%, 18%);
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin-left: 5px;
+}
+
+.facturacion input:checked + label {
+  background-color: #e50914;
+  color: white;
+}
+/* Por defecto mostramos los precios mensuales */
+.precio-mensual {
+  display: flex;
+  align-items: center;
+}
+
+.precio-anual {
+  display: none;
+}
+
+/* Cuando se selecciona ANUAL */
+#anual:checked ~ .caja .precio-mensual {
+  display: none;
+}
+
+#anual:checked ~ .caja .precio-anual {
+  display: flex;
+  align-items: center;
+}
+
+/* Cuando se selecciona MENSUAL */
+#mensual:checked ~ .caja .precio-mensual {
+  display: flex;
+  align-items: center;
+}
+
+#mensual:checked ~ .caja .precio-anual {
+  display: none;
+}
+
+.caja {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  width: 100%;
+}
+.caja1,
+.caja2,
+.caja3 {
+  flex: 1;
+  height: 600px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: #1b1b20;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+.caja .span1 {
+  display: flex;
+  justify-content: space-between;
+}
+.caja .precio {
+  display: flex;
+  align-items: center;
+}
+.caja h2 {
+  font-weight: 900;
+  color: #ffffff;
+}
+.caja .span2 {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  font-weight: 600;
+  gap: 8px;
+  flex: 1;
+  color: #ffffff;
+}
+.caja .span2 a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  text-decoration: none;
+  text-align: left;
+  color: #d1d5db;
+   min-width: 0;
+  overflow-wrap: break-word;
+}
+.caja .span2 a .material-symbols-outlined {
+  width: 25px;
+  min-width: 25px;
+  flex-shrink: 0;
+  color: #f59e0b;
+}
+.precio span {
+  color: hsl(7, 54%, 81%);
+}
+.caja .span2 a .texto-beneficio {
+  flex: 1;
+  text-align: left;
+}
+.texto-beneficio {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.radio-plan {
+  display: none;
+}
+.plan {
+  border: 2px solid transparent;
+  border-radius: 12px;
+}
+.plan:has(input:checked) {
+  border: 4px solid #e50914;
+}
+.plan input[type="radio"] {
+  display: none;
+}
+.boton-plan {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #e50914;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.continuar-plan {
+  display: none;
+}
+.plan:has(input:checked) .continuar-plan {
+  display: block;
+}
+.continuar-plan {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #e50914;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.continuar-plan:hover {
+  color: white;
+}
+.caja1 .span1 p {
+  background-color: #39383e;
+  color: hsl(7, 54%, 81%);
+  width: 150px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.caja1 .span1 span {
+  color: hsl(7, 54%, 81%);
+}
+.caja2 .span1 p {
+  background-color: hsl(351, 39%, 23%);
+  color: hsl(7, 87%, 81%);
+  width: 200px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.caja2 .span1 span {
+  color: hsl(7, 87%, 81%);
+}
+.caja3 .span1 p {
+  background-color: hsl(260, 47%, 22%);
+  color: hsl(258, 100%, 87%);
+  width: 200px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.caja3 .span1 span {
+  color: hsl(257, 67%, 82%);
+}
+.caja h3 {
+  color: white;
+  font-weight: 800;
+}
+.caja1 > p,
+.caja2 > p,
+.caja3 > p {
+  color: hsl(7, 54%, 81%);
+}
+.garantia {
+  background-color: #131318;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  margin-top: 30px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.garantia a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: hsl(7, 54%, 81%);
+  text-align: center;
+}
+.garantia .material-symbols-outlined {
+  color: #f59e0b;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Evita que cualquier elemento genere scroll horizontal */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Evita que los elementos flex se hagan más grandes que su contenedor */
+.caja,
+.plan,
+.garantia,
+.facturacion {
+  max-width: 100%;
+  min-width: 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .suscripcion {
+    width: 95%;
+    max-width: 100%;
+    margin: 40px auto;
+  }
+
+  .caja {
+    gap: 20px;
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    padding: 20px;
+  }
+
+  .caja h3 {
+    font-size: 22px;
+  }
+
+  .caja .span2 {
+    font-size: 15px;
+  }
+
+  .facturacion label {
+    width: 250px;
+  }
+
+  .garantia {
+    gap: 10px;
+  }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+  .suscripcion {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+
+  /* Membresía */
+  .suscripcion > span {
+    width: 100%;
+    max-width: 100%;
+    padding: 8px 10px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* Título */
+  .suscripcion h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: 20px;
+  }
+
+  /* Descripción */
+  .suscripcion > p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+
+  /* =========================
+     FACTURACIÓN
+  ========================= */
+
+  .facturacion {
+    width: 100%;
+    max-width: 100%;
+    gap: 5px;
+    padding: 5px;
+    margin-bottom: 25px;
+  }
+
+  .facturacion label {
+    width: 50%;
+    max-width: 50%;
+    padding: 10px 5px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .facturacion label span {
+    display: block;
+    width: fit-content;
+    margin: 4px auto 0;
+    font-size: 11px;
+  }
+
+
+  /* =========================
+     TARJETAS
+  ========================= */
+
+  .caja {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    padding: 25px 20px;
+  }
+
+  .caja .span1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .caja .span1 p {
+    max-width: 75%;
+    width: auto;
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .caja h3 {
+    font-size: 22px;
+  }
+
+  .caja1 > p,
+  .caja2 > p,
+  .caja3 > p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+
+  /* =========================
+     PRECIO
+  ========================= */
+
+  .precio {
+    max-width: 100%;
+  }
+
+  .caja h2 {
+    font-size: 30px;
+  }
+
+
+  /* =========================
+     BENEFICIOS
+  ========================= */
+
+  .caja .span2 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .caja .span2 a {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 8px;
+    overflow-wrap: anywhere;
+  }
+
+  .caja .span2 a .material-symbols-outlined {
+    flex-shrink: 0;
+  }
+
+  .textoBeneficio {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+
+  /* =========================
+     BOTÓN
+  ========================= */
+
+  .boton-plan {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* =========================
+     GARANTÍAS
+  ========================= */
+
+  .garantia {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px;
+  }
+
+  .garantia a {
+    width: 100%;
+    min-height: 60px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================
+   CELULAR CHICO
+========================= */
+
+@media (max-width: 480px) {
+
+  .suscripcion {
+    padding: 0 10px;
+  }
+
+  .suscripcion > span {
+    font-size: 11px;
+  }
+
+  .suscripcion h1 {
+    font-size: 23px;
+  }
+
+  .suscripcion > p {
+    font-size: 14px;
+  }
+
+
+  .facturacion {
+    gap: 3px;
+  }
+
+  .facturacion label {
+    font-size: 12px;
+    padding: 9px 3px;
+  }
+
+  .facturacion label span {
+    font-size: 10px;
+  }
+
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    padding: 20px 15px;
+  }
+
+  .caja h3 {
+    font-size: 20px;
+  }
+
+  .caja h2 {
+    font-size: 27px;
+  }
+
+  .caja .span2 {
+    font-size: 13px;
+  }
+
+  .caja1 .span1 p,
+  .caja2 .span1 p,
+  .caja3 .span1 p {
+    max-width: 70%;
+    font-size: 11px;
+  }
+
+  .garantia a {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================
+   CELULAR MUY CHICO
+========================= */
+
+@media (max-width: 360px) {
+
+  .suscripcion h1 {
+    font-size: 21px;
+  }
+
+  .facturacion label {
+    font-size: 11px;
+  }
+
+  .facturacion label span {
+    font-size: 9px;
+  }
+
+  .caja1,
+  .caja2,
+  .caja3 {
+    padding: 18px 12px;
+  }
+
+}

@@ -1,7 +1,8 @@
 .section1 {
     height: 100vh;
 }
-.sectionMain{
+
+.sectionMain {
     background-color: var(--surface-lowest);
     display: flex;
 }
@@ -16,7 +17,7 @@
     width: 100%;
 }
 
-h2>span {
+.spanTitle {
     color: var(--color-accent-cyan);
 }
 
@@ -47,34 +48,246 @@ button>a {
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
+
+    .divSub1>p {
+        display: none;
+    }
 }
 
-.cardCss{
+.cardCss {
     background-color: var(--surface-container) !important;
     min-height: 650px;
     max-height: 650px;
-    
 
-    &div>h5{
+
+    &div>h5 {
         color: var(--text-primary);
     }
 }
-.card-img{
-        min-height: 400px;
-    }
 
-.card-body>.card-text{
-    display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+.titleSuge {
+    color: var(--text-primary);
 }
-.card-body>a{
+
+.card-img {
+    min-height: 400px;
+}
+
+.card-body>.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-body>a {
     display: flex;
     justify-content: center;
     background-color: #e50914;
     color: var(--text-secondary);
 }
-.card-body>a:hover{
+
+.card-body>a:hover {
     background-color: var(--color-accent-cyan) !important;
+}
+
+.section3>div {
+    height: 250px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,
+            #8b344e 0%,
+            #352654 50%,
+            #201a36 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .divSub1 {
+        width: 75%;
+    }
+
+    h2 {
+        color: var(--text-primary);
+    }
+
+    p {
+        color: var(--text-secondary);
+    }
+
+    ul {
+        list-style-type: none;
+        color: var(--text-secondary);
+        font-weight: 600;
+
+    }
+
+    .spanDivSub1 {
+        font-weight: 800;
+        color: var(--color-primary);
+
+    }
+
+    .divSub2 {
+        width: 25%;
+        height: 100%;
+
+        .divCircle1 {
+            border: 6px dashed var(--surface-border);
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+
+            .divCircle2 {
+                border: 1px solid var(--surface-border);
+                border-radius: 100%;
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        /* boton  */
+        .btnSubs {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 1rem 2.5rem;
+
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            background: #f20d20;
+            border: 2px solid #ff2638;
+            border-radius: 50px;
+
+            cursor: pointer;
+            overflow: hidden;
+
+            box-shadow:
+                0 0 10px rgba(255, 20, 40, 0.6),
+                0 0 25px rgba(255, 20, 40, 0.35);
+
+            transition: all 0.3s ease;
+        }
+
+
+
+        /* HOVER */
+        .btnSubs:hover {
+            color: #fff;
+            background: #ff1529;
+            border-color: #ff4a58;
+
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 0 12px rgba(255, 20, 40, 0.8),
+                0 0 30px rgba(255, 20, 40, 0.6),
+                0 0 50px rgba(255, 20, 40, 0.25);
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .divSub1>ul>li {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+
+}
+@media (max-width: 767px) {
+    .divCircle1,
+    .divCircle2 {
+        border: none;
+        width: auto;
+        height: auto;
+    }
+
+    .divSub2 {
+        width: auto;
+        height: auto;
+    }
+
+    .btnSubs {
+        padding: 1rem 1.8rem;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    .section3>.container{
+        flex-direction: column;
+    }
+}
+
+.section4 {
+
+    .titleCategorías {
+        color: var(--text-primary);
+    }
+
+    .pCategorías,
+    .pCatTag {
+        color: var(--text-secondary);
+    }
+
+    .bi-arrow-down-left-circle {
+        width: ;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem
+    }
+
+    .divImageCard {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        height: 200px;
+        border-radius: 20px;
+        position: relative;
+        padding: 2rem;
+        text-decoration: none;
+        transition: .5s;
+    }
+
+    .divImageCard:hover {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .divImageCard1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(14, 14, 19, 0.726)),
+            url("https://s.yimg.com/lo/mysterio/api/45b0fb7dfc768f1c7419b3157c4de3db04b2ba541598f6c6b5e0f67e24a6508f/lightyear_networkapi/resizefill_w976%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fes%2Fel_espanol_660%2F6ce8595efc14be2707ca86881e039524.jpg");
+    }
+
+    .divImageCard2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(14, 14, 19, 0.726)),
+            url(https://i0.wp.com/xn--oo-yjab.cl/wp-content/uploads/2020/06/paisaje-Ciencia-Ficci%C3%B3n-CGI-Ia.jpg);
+    }
+
+    .divImageCard3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(14, 14, 19, 0.726)),
+            url(https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/adaptaciones-videojuegos-peliculas/warcraft/123802202-1-esl-ES/Warcraft.jpg?crop=0.923xw:1.00xh;0.0323xw,0);
+    }
+
+    .divImageCard4 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(14, 14, 19, 0.726)),
+            url(https://www.ciudad.com.ar/resizer/v2/la-produccion-de-drama-y-suspenso-esta-ambientada-principalmente-en-una-escuela-X3GLBTAWRFCSHATQM6NFOFLDDY.jpg?auth=4e0c9d83688561039b2559f04082d70bb32ff282967251b1d0d42f071da48968&width=767);
+    }
+
+    .divImageCard5 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(14, 14, 19, 0.726)),
+            url(https://www.laizquierdadiario.cl/IMG/arton93278.jpg);
+    }
+
+    .divImageCard6 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.288), rgba(14, 14, 19, 0.726)),
+            url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF7oHEG7g3GWVa_gkghQWG4LOQpU4_DTyP4q3y8Hf0uzMS_Wvjh0qwI6k&s=10);
+    }
 }
