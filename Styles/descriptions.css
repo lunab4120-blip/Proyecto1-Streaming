@@ -1,31 +1,34 @@
 body {
   background: var(--surface-lowest) !important;
+  padding-top: 80px;
 }
 
 
 
 
  .header-hero {
-  min-height: clamp(520px, 85vh, 820px); 
-  display: flex;
-  align-items: flex-end;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("https://staticm11.app.flow.com.ar/images/content/400/600/-GoTxQ2aQvBehP_TBXDyDw?tags=TEXT,VERTICAL");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://staticm11.app.flow.com.ar/images/content/1920/1080/m4d9buXOsPYXRO1dLJ5Zhw");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 450px;
+  padding: 3rem 2rem;
+  top: 20;
 }
 
 
 
-.episodio-num {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.2);
+a{
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 /* MÓVIL */
 @media (max-width: 767.98px) {
   .header-hero {
     min-height: 560px;
+    background-position: top center;
   }
   .episodio-num {
     font-size: 1.75rem;

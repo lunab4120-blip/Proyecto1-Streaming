@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
 }
 .card-custom {
-  background-color: var( --surface-base) !important;
+  background-color: var(--surface-base) !important;
   border: none;
   border-radius: 8px;
   min-height: 550px;
@@ -15,8 +15,8 @@ body {
 p {
   color: var(--text-secondary);
 }
-.texto-destacado{
-    color: var(--text-secondary);
+.texto-destacado {
+  color: var(--text-secondary);
 }
 
 .header-hero {
