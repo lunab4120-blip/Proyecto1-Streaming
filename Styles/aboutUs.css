@@ -5,7 +5,7 @@
             #352654 50%,
             #201a36 100%);
 }
-h1{
+h1, .section2>div>h2{
     color: var(--text-primary);
 }
 .divCaja{
@@ -33,5 +33,18 @@ h1{
 }
 
 .section2{
+    background-color: var(--surface-lowest);
+}
+.card-img-top{
+    min-height: 250px;
+}
+.card{
     background-color: var(--surface-container);
+    color: var(--text-secondary);
+    min-height: 500px;
+    max-height: 500px;
+    overflow: hidden    ;
+}
+.section2>div>p{
+    color: var(--text-secondary);
 }
