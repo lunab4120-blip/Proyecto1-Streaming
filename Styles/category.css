@@ -1,0 +1,36 @@
+.hero-pelicula {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("https://static.wikia.nocookie.net/doblaje/images/e/e3/El-Coraz%C3%B3n-de-la-Bestia-Poster.jpg/revision/latest?cb=20260616011839&path-prefix=es");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 6rem 2rem;
+}
+
+/* Cajitas con los datos: año, duración, edad y calidad */
+.dato {
+  display: inline-block;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  margin: 0 0.4rem 0.4rem 0;
+}
+
+/* Las tarjetas de comedia miden 550px; estas son más bajas */
+.card-custom.sin-altura {
+  min-height: auto;
+}
+
+/* Fotos: mismo tamaño para todas */
+.foto-actor,
+.foto-relacionado {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.foto-actor { aspect-ratio: 3 / 4; }
+.foto-relacionado { aspect-ratio: 2 / 3; }
