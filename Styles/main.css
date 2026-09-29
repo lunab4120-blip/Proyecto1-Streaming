@@ -199,6 +199,10 @@ button>a {
 }
 
 @media (max-width: 767px) {
+    .divSub1>h2{
+        padding-top: 10px;
+    }
+
     .divCircle1,
     .divCircle2 {
         border: none;
@@ -213,8 +217,11 @@ button>a {
 
     .btnSubs {
         padding: 1rem 1.8rem;
-        font-size: 0.9rem;
         white-space: nowrap;
+    }
+
+    .btnSubs>span{
+        font-size: 12px;
     }
     .section3>.container{
         flex-direction: column;

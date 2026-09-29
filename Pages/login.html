@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../Styles/login.css">
     <link rel="stylesheet" href="../Styles/footer.css">
+    <link rel="stylesheet" href="../Styles/navbar.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,6 +20,27 @@
     />
   </head>
   <body>
+      <nav>
+      <div class="navbar px-5">
+        <div class="logos">
+          <a href="">
+            <img src="../Assets/img/logoHOTflix.png" alt="Logo" />
+          </a>
+
+          <a class="in" href="../index.html">Inicio</a>
+          <a class="in" href="../Pages/suscripcion.html">Suscripcion</a>
+        </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon"> ☰ </label>
+        <div class="inicioS menu-mobile">
+          <form class="d-flex" role="search">
+            <input type="search" placeholder="🔍 Buscar series y peliculas..." aria-label="Search" />
+          </form>
+          <a class="iS" href="../Pages/login.html">Iniciar Sesion</a>
+          <a class="sus" href="../Pages/error404.html">Registrarse</a>
+        </div>
+      </div>
+    </nav>
     <main>
       <div class="cajita">
         <div class="cajitas cajita1">
