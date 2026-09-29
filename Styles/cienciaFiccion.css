@@ -1,0 +1,32 @@
+/*comedia */
+body {
+  background-color: var(--surface-lowest) !important;
+  font-family: sans-serif;
+}
+.card-custom {
+  background-color: var( --surface-base) !important;
+  border: none;
+  border-radius: 8px;
+  min-height: 550px;
+}
+.card-title {
+  color: var(--text-primary) !important;
+}
+p {
+  color: var(--text-secondary);
+}
+.texto-destacado{
+    color: var(--text-secondary);
+}
+
+.header-hero {
+  position: relative;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("https://images.openai.com/static-rsc-4/WjoSwasFZchsROP8vEQbI9debiQMDK0m4o4VVIdTl5wDggYWKJ36Sh6KBmnuecKT95o4jbLe2IAR9-CneSEdpu4HrGyp2YIMSXczI_vbicOzj89sNcw7iYLWE8brDxnLF9pawPpx0oOSgotlpffRqbgpl0ozr6Dw9s9AnZWTAF_zneecFDIFYOLIXbZtc989?purpose=fullsize");
+  background-size: 100% auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 6rem 2rem;
+}

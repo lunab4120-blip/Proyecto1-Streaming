@@ -4,9 +4,13 @@
     align-items: center;
     justify-content: space-between; 
     position: fixed !important;
+    top: 0 ;
     width: 100%;
     z-index: 1000;
     min-height: 75px;
+}
+body{
+    padding-top: 70px;
 }
 img {
     width: 150px;

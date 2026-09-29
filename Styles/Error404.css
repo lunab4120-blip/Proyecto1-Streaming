@@ -1,0 +1,31 @@
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--surface-container);
+    color: var(--text-primary);
+}
+h1{
+    font-size: 50px;
+
+}
+iframe{
+    height: 500px;
+    width: 500px;
+}
+.a404{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+.btn404{
+    border: 1px solid black;
+    background-color: var(--color-primary);
+}
+.btn404:hover{
+    background-color: var(--color-primary-hover);
+}
+@media (max-width: 768px){
+    iframe{
+        height: 200px;
+        width: 200px;
+    }
+}

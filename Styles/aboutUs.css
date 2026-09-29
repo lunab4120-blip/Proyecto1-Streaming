@@ -1,0 +1,50 @@
+.section1{
+    min-height: 40vh;
+    background: linear-gradient(135deg,
+            #8b344e 0%,
+            #352654 50%,
+            #201a36 100%);
+}
+h1, .section2>div>h2{
+    color: var(--text-primary);
+}
+.divCaja{
+    border: 1px solid black;
+    color: var(--text-secondary);
+    background-color: var(--surface-container-low);
+    height: 100px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+@media(max-width: 1100px){
+    .divCaja{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 600px){
+    .divCaja{
+        font-size: .8rem;
+    }
+}
+@media(max-width: 400px){
+    .divCaja{
+        font-size: .6rem;
+    }
+}
+
+.section2{
+    background-color: var(--surface-lowest);
+}
+.card-img-top{
+    min-height: 250px;
+}
+.card{
+    background-color: var(--surface-container);
+    color: var(--text-secondary);
+    min-height: 500px;
+    max-height: 500px;
+    overflow: hidden    ;
+}
+.section2>div>p{
+    color: var(--text-secondary);
+}
